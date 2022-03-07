@@ -1,0 +1,33 @@
+GET http://localhost:5000/api/events
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjBhYTdjNWIwNjI0NGU5MzExNWJmMmUiLCJuYW1lIjoiam9zZSIsImlhdCI6MTY0NDg2ODgxNywiZXhwIjoxNjQ0ODc2MDE3fQ.NtX1PayNNhuzSNEx8xWrD37tbN5QE6QZM53_am-g8i8
+
+
+######
+POST http://localhost:5000/api/events
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjBhYTdjNWIwNjI0NGU5MzExNWJmMmUiLCJuYW1lIjoiam9zZSIsImlhdCI6MTY0NDg2ODgxNywiZXhwIjoxNjQ0ODc2MDE3fQ.NtX1PayNNhuzSNEx8xWrD37tbN5QE6QZM53_am-g8i8
+
+{
+   "title": "prueba 3",
+   "start":"2022-02-11T21:10:56.516Z",
+   "end":"2022-02-11T21:10:56.516Z",
+   "notes": "esta es una nota x3"
+}
+
+######
+PUT http://localhost:5000/api/events/620ab660ac8b8fcfecf05b9d
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjBhYTdjNWIwNjI0NGU5MzExNWJmMmUiLCJuYW1lIjoiam9zZSIsImlhdCI6MTY0NDg2ODgxNywiZXhwIjoxNjQ0ODc2MDE3fQ.NtX1PayNNhuzSNEx8xWrD37tbN5QE6QZM53_am-g8i8
+
+
+{
+   "title": "prueba update",
+    "notes": "esta es una nota nelson",
+    "start": "2022-02-11T21:10:56.516Z",
+    "end": "2022-02-11T21:10:56.516Z"
+}
+
+######
+DELETE  http://localhost:5000/api/events/6206dd286a9b5641a75e3129
+content-type: application/json

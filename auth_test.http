@@ -1,0 +1,22 @@
+POST http://localhost:5000/api/auth/new
+content-type: application/json
+
+{
+    "name":"luis",
+    "email": "luis@gmail.com",
+    "password":"123456"
+}
+
+###############
+POST http://localhost:5000/api/auth
+content-type: application/json
+
+{
+    "email": "jose@gmail.com",
+    "password":"123456"
+}
+
+###################
+GET http://localhost:5000/api/auth/renew
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjBhYTdjNWIwNjI0NGU5MzExNWJmMmUiLCJuYW1lIjoiam9zZSIsImlhdCI6MTY0NDg2NTQ3OCwiZXhwIjoxNjQ0ODcyNjc4fQ.JMquPncu88f_Bw3oxfmz077-LTlHntfPqItHe4bDS80
